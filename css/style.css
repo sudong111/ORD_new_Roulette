@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@100;300;400&display=swap');
+body,html,div,span,h1,h2,h3,p,select,ul,li{ margin: 0; padding: 0; border: none; white-space: nowrap; text-align: center;}
+body{background-color: #3d3d3e;}
+p,select,option,#button_start,span,button,input{font-family: 'Noto Sans KR', sans-serif;}
+h1{ font-family: 'Black Han Sans', sans-serif; font-size: 80px; margin-top: 20px; text-shadow: -1px 0 #000, 0 10px #000, 1px 0 #000, 0 -1px #000; color: white;}
+body>p{ font-weight: 400; font-size: 23px; text-shadow: -1px 0 #000, 0 3px #000, 1px 0 #000, 0 -1px #000; color: white;}
+select,#button_start{font-weight: 400; font-size: 20px; width: 200px; height: 50px;}
+select,#button_start,#button_field>div>button{border: 3px solid #D24D57; color: white; background-color: #3d3d3e; transition-property:all; transition-duration:0.2s; transition-timing-function:ease-in-out; -webkit-appearance: none;}
+select{margin-top: 30px; border-radius: 0px;}
+select>option{ font-weight: 300; font-size: 20px; color: white;}
+select:hover,#button_start:hover,#button_field>div>button:hover{ border-color: #888;}
+#button_start:hover,#button_field>div>button:hover{box-shadow: 0px 0px 3px 3px #D24D57;}
+select:focus,#button_start:focus,#button_field>div>button:focus{outline: none;}
+#button_start{margin-top: 160px; margin-bottom: 20px;}
+#button_start:active,#button_field>div>button:active{color: #888; transition-property:all; transition-duration:0.05s; transition-timing-function:ease-in-out;}
+#rule_field{margin-bottom: 20px;}
+#rule_field>span,#button_field>div>span,#text_field>p{color: white; font-size: 20px;}
+#text_field>p{transition-property:all; transition-duration:0.2s; transition-timing-function:ease-in-out;}
+#button_field{width: 100%; height: 300px;}
+#button_field>div{height: 200px; margin-top: 50px;}
+#button_field>div>button{margin-top: 10px;}
+div:first-child:nth-last-child(1){float: left; width: 100%;}
+div:first-child:nth-last-child(2),div:first-child:nth-last-child(2) ~ div{float: left; width: 50%;}
+div:first-child:nth-last-child(3),div:first-child:nth-last-child(3) ~ div{float: left; width: 33.3%;}
+div:first-child:nth-last-child(4),div:first-child:nth-last-child(4) ~ div{float: left; width: 25%;}
+#button_field>div>button{font-weight: 400; font-size: 20px; width: 80px; height: 50px;}
+#side_field{background-color: #566269; z-index: 10000; position: fixed; width: 288px; height: 100%; bottom: 0px;}
+#side_bar{height: 100%; overflow-y: auto;}
+#side_toggle{position: absolute; right: 288px; top: 200px; width: 50px; height: 50px; background: #333333; color: white; cursor: pointer; opacity: 0.7; border-radius: 0 5px 5px 0; padding: 5px;}
+#side_todo>input{width: 250px;height: 30px;font-size: 20px; margin-top: 200px;}
+#side_bar>li>span{white-space:normal; color: white; font-size: 15px;}
+#side_bar>li>button{font-weight: 400; font-size: 15px; border: 1px solid #D24D57; color: white; background-color: #3d3d3e; transition-property:all; transition-duration:0.2s; transition-timing-function:ease-in-out; -webkit-appearance: none;}
+#directory_upload{width: 70px;}
+#side_copy{white-space:normal; color: white; font-size: 15px; margin-top: 20px;}
+.hidden { display: none;}
+
+

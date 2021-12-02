@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head> <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/roulette.js" defer></script>
+    <script src="js/array.js" defer></script>
+    <script src="js/save_code.js" defer></script>
+    <script src="js/css.js" defer></script>
+    <script src="js/side.js" defer></script>
+    <title>ORD-Roulette</title>  
+</head>
+<body>
+  <h1>ORD-Random Roulette</h1>
+  <p>랜덤룰 외 다른 룰에서는 인원이 정해져 있습니다. (대회룰 3명, 듀컨룰 4명 고정) 랜덤룰을 돌릴때만 인원을 설정해 주세요.</p>
+  <div id="select_field">
+    <select id="select_rule" class="box_1" onchange="Restart()">
+      <option value="null">--선택--</option>
+      <option value="Rules_1">대회룰(1마뎀3물뎀)</option>
+      <option value="Rules_2">대회룰(3마뎀1물뎀)</option>
+      <option value="Rules_3">랜덤룰</option>
+      <option value="Rules_4">듀컨룰</option>
+    </select>
+    <select id="select_people"class="box_2" onchange="Restart()">
+      <option value="null">--선택--</option>
+      <option value=1>1명</option>
+      <option value=2>2명</option>
+      <option value=3>3명</option>
+      <option value=4>4명</option>
+      </select>
+  </div>
+
+  <div id="side_field" style="right:-288px">
+    <span id="side_toggle">
+    </span>
+    <input type="file" id="directory_upload" webkitdirectory>
+  <div id="side_copy">
+  </div>
+    <form id="side_todo">
+      <input type="text" placeholder="입력후 엔터하세요." required />
+    </form>
+    <ul id="side_bar">
+    </ul>
+  </div>
+  <input type="button" value="실행" id="button_start"></input>
+  <div id="rule_field"></div>
+  <div id="text_field"></div>
+  <div id="button_field"></div>
+
+</body>
+</html>
